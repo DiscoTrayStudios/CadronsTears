@@ -273,7 +273,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 388119394}
   speed: 1
-  moveSpots: []
+  moveSpots:
+  - {fileID: 1723508991}
+  - {fileID: 719854225}
+  - {fileID: 2133861726}
+  - {fileID: 382888447}
 --- !u!61 &32401830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26250,7 +26254,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 388119394}
   speed: 1
-  moveSpots: []
+  moveSpots:
+  - {fileID: 1723508991}
+  - {fileID: 719854225}
+  - {fileID: 2133861726}
+  - {fileID: 382888447}
 --- !u!82 &1356325047
 AudioSource:
   m_ObjectHideFlags: 0
