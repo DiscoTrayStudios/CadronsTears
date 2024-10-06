@@ -205,7 +205,7 @@ Transform:
   m_GameObject: {fileID: 32401824}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.7956, y: 0.6671449, z: 0}
+  m_LocalPosition: {x: 6.4, y: 0.6671449, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2566,6 +2566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 469260783}
+  animalSpots: {fileID: 0}
   dialogText: {fileID: 1317079938}
   curtain: {fileID: 193484953}
   canvas: {fileID: 608742035}
@@ -4506,13 +4507,14 @@ GameObject:
   - component: {fileID: 621137862}
   - component: {fileID: 621137861}
   - component: {fileID: 621137865}
+  - component: {fileID: 621137866}
   m_Layer: 0
   m_Name: MiniDeer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &621137861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4527,7 +4529,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 388119394}
   speed: 1
-  moveSpots: []
+  moveSpots:
+  - {fileID: 1723508991}
+  - {fileID: 719854225}
+  - {fileID: 2133861726}
+  - {fileID: 382888447}
 --- !u!95 &621137862
 Animator:
   serializedVersion: 5
@@ -4610,7 +4616,7 @@ Transform:
   m_GameObject: {fileID: 621137860}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.92, y: -4.2, z: 0}
+  m_LocalPosition: {x: 6.07, y: -3.74, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4631,7 +4637,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.00001
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4643,6 +4649,51 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &621137866
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621137860}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.15, y: 0.17}
+    newSize: {x: 0.15, y: 0.17}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.15, y: 0.17}
+  m_EdgeRadius: 0
 --- !u!1 &637328658
 GameObject:
   m_ObjectHideFlags: 0
@@ -25749,7 +25800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1201214072
 Transform:
   m_ObjectHideFlags: 0
@@ -26162,7 +26213,7 @@ Transform:
   m_GameObject: {fileID: 1356325040}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.7, y: -1.23, z: 0}
+  m_LocalPosition: {x: 15.19, y: -1.23, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26183,7 +26234,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.0001
+  m_GravityScale: 0.00001
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -26194,7 +26245,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1356325045
 BoxCollider2D:
   m_ObjectHideFlags: 0
