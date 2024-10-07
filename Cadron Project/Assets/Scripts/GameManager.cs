@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject canvas;
 
     public GameObject creditsmenu;
-    public GameObject player;
+    //public GameObject player;
     private Dictionary<string, bool> letters;
     private bool gamePaused = false;
     private bool raiseLower = false;
@@ -57,19 +57,24 @@ public class GameManager : MonoBehaviour
     }
 
     public void playerBusy(bool b) {
-        if (player != null) {
-            player.GetComponent<PlayerMovement>().SetIdle(b);
-            busy = b;  
-            if (b) { 
-                animator.SetFloat("horizontal", 0);
-                animator.SetFloat("vertical",   0);
+        /*if (player != null) {
+            player.GetComponent<PlayerMovement>().SetIdle(b);*/
+            busy = b; 
+            /*if (b) { 
+                Debug.Log("stoppingggg");
+                animator = player.GetComponent<Animator>();
                 player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll; 
+                animator.SetFloat("horizontal", 0f);
+                animator.SetFloat("vertical",   0f);
+                player.GetComponent<PlayerMovement>().SetIdle(true);
+                //Debug.Log(animator.horizontal);
+                
             }
-            else   { 
-                Animator animator = player.GetComponent<Animator>(); 
-                player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation; 
-            }
-        }
+           // else   { 
+                //Animator animator = player.GetComponent<Animator>(); 
+                //player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation; 
+            //}
+        }*/
     }
 
     public bool isBusy () { return busy; }
@@ -126,8 +131,8 @@ public class GameManager : MonoBehaviour
     }
     public void DialogShow(string text) {
         dialogBox.SetActive(true);
-        //playerBusy(true);
-        busy = true;
+        playerBusy(true);
+        //busy = true;
         StopAllCoroutines();
         StartCoroutine(TypeText(text));
     }
@@ -141,11 +146,11 @@ public class GameManager : MonoBehaviour
 
     public void DialogHide(){
         dialogBox.SetActive(false);
-        //playerBusy(false);
+        playerBusy(false);
         busy = false;
         gamePaused = false;
-        Arrow arrow = player.transform.GetChild(0).GetComponent<Arrow>();
-        arrow.itsMouseExit();
+        //Arrow arrow = player.transform.GetChild(0).GetComponent<Arrow>();
+        //arrow.itsMouseExit();
     }
 
     public void ShowButtons(){

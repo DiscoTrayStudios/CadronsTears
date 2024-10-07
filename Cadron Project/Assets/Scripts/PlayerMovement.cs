@@ -68,21 +68,30 @@ public class PlayerMovement : MonoBehaviour
         horizontal -= h_path;
         vertical -= v_path;
         }
-        else { horizontal = 0; vertical = 0; 
-        body.constraints = RigidbodyConstraints2D.FreezeAll; }
+        else { horizontal = 0f; vertical = 0f; 
+        animator.SetFloat("horizontal", 0.0f);
+        animator.SetFloat("vertical", 0.0f);
+        body.constraints = RigidbodyConstraints2D.FreezeAll;
+         }
     }
-    public void SetIdle(bool b) { idle = b; }
+    public void SetIdle(bool b) { idle = b;
+    animator.SetFloat("horizontal", 0.0f);
+    SetHorizontal(0.0f);}
+
 
     public static void SetHorizontal(float h) { h_path = h; }
     public static void SetVertical(float v) { v_path = v; }
 
     void FixedUpdate() {
-        if ( (Mathf.Abs(horizontal) > 0.05f || Mathf.Abs(vertical) > 0.05f)) {
+        if(!GameManager.Instance.isBusy()){
+            if ( (Mathf.Abs(horizontal) > 0.05f || Mathf.Abs(vertical) > 0.05f)) {
             animator.SetFloat("horizontal", Mathf.Round(5*horizontal)/5);
             animator.SetFloat("vertical", Mathf.Round(5*vertical)/5);
             horizontal *= moveLimiter;
             vertical *= moveLimiter;
+            }
         }
+        
         
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
