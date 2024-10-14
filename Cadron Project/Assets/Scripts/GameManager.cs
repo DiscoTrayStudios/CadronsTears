@@ -109,6 +109,7 @@ public class GameManager : MonoBehaviour
     }
      IEnumerator LoadYourAsyncScene(string scene)
     {
+        curtain.SetActive(true);
         StartCoroutine(ColorLerpFunction(true, 1));
         while (raiseLower)
         {
