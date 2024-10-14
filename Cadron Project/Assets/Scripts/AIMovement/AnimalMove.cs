@@ -73,7 +73,7 @@ public class AnimalMove : MonoBehaviour
     }
 
 
-    void OnCollisionEnter2D(Collision2D coll)
+    void OnTriggerEnter2D(Collision2D coll)
     {
         // if the animal collides with the player it will move away from the player
         if (coll.gameObject == target)
