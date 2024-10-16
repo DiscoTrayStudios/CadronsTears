@@ -27,9 +27,15 @@ public class AnimalMove : MonoBehaviour
 
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         rend = GetComponent<SpriteRenderer>();
+        /*moveSpots = GameManager.Instance.getSpots();
+        if(moveSpots.Count == 0){
+            moveSpots = GameManager.Instance.getSpots();
+        }*/
+        //Debug.Log("should have spots");
         randomSpot = Random.Range(0, moveSpots.Count);
     }
 
@@ -71,12 +77,28 @@ public class AnimalMove : MonoBehaviour
         }
 
     }
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject == moveSpots[spot].gameObject)
+        {
+            anim.SetFloat("speed", 0);
+            // wait ten seconds before activating the "inSpot" boolean
+            StartCoroutine(Wait10());
 
+            inSpot = true;
+            anim.SetBool("inSpot", inSpot);
+        }
+    }
 
-    void OnTriggerEnter2D(Collision2D coll)
+    void CollisionEnter2D(Collision2D coll)
     {
         // if the animal collides with the player it will move away from the player
+        
+        // if the animal collides with a spot that is in the List<Transform> of spots
+        // it will activate the "inSpot" boolean and send the animator a speed of 0
+
         if (coll.gameObject == target)
+        //else
         {
             player = true;
             anim.SetBool("player", player);
@@ -89,17 +111,6 @@ public class AnimalMove : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, coll.transform.position, speed * Time.deltaTime); ;
 
 
-        }
-        // if the animal collides with a spot that is in the List<Transform> of spots
-        // it will activate the "inSpot" boolean and send the animator a speed of 0
-        if (coll.gameObject == moveSpots[spot].gameObject)
-        {
-            anim.SetFloat("speed", 0);
-            // wait ten seconds before activating the "inSpot" boolean
-            StartCoroutine(Wait10());
-
-            inSpot = true;
-            anim.SetBool("inSpot", inSpot);
         }
     }
 
