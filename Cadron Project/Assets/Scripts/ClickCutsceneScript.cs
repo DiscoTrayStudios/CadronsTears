@@ -31,6 +31,9 @@ public class ClickCutsceneScript : MonoBehaviour
         
     }
 
+    /*public void CheckMapIcon(){
+        if(gameObject.Get)
+    }*/
 
     public void OnMouseExit(){
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);

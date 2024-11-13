@@ -14,9 +14,9 @@ public class BackpackScript : MonoBehaviour
     private Dictionary<string, bool> letters;
    
     public void OpenBackpack(){
-        if(!GameManager.Instance.IsPaused()){
+        if(!GameManager.Instance.isBusy()){
         
-        GameManager.Instance.PauseGame(); 
+        GameManager.Instance.playerBusy(true); 
         letters = GameManager.Instance.GetLetters();
         Vector2 letterpos = new Vector2(-170,135);
         foreach(KeyValuePair<string, bool> letter in letters){
@@ -40,7 +40,7 @@ public class BackpackScript : MonoBehaviour
     }
     public void CloseBackpack(){
         gameObject.SetActive(false);
-        GameManager.Instance.UnpauseGame();
+        GameManager.Instance.playerBusy(false);
         Backpackbutton.SetActive(true);
         foreach(Transform child in letterbox.transform){
             GameObject.Destroy(child.gameObject);
@@ -48,7 +48,7 @@ public class BackpackScript : MonoBehaviour
     
     }
     void Awake(){
-        if(GameManager.Instance.IsPaused()){
+        if(GameManager.Instance.isBusy()){
             Backpackbutton.SetActive(false);
         }
         else

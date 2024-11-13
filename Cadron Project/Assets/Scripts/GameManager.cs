@@ -11,10 +11,10 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance {get; private set;}
 
     public GameObject dialogBox;
+    public GameObject animalSpots;
     public TextMeshProUGUI dialogText;
     public GameObject curtain;
     public GameObject canvas;
-
     public GameObject creditsmenu;
     //public GameObject player;
     private Dictionary<string, bool> letters;
@@ -33,6 +33,17 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);  
         } else {
         Destroy(gameObject);
+        }
+    }
+    
+    public List<Transform> getSpots(){
+        Debug.Log("returning spots");
+        StartCoroutine(WaitforSpots());
+        return animalSpots.GetComponent<MakeSpotList>().getMoveSpots();
+    }
+    public IEnumerator WaitforSpots(){
+        while(!animalSpots){
+            yield return null;    
         }
     }
 
@@ -121,7 +132,9 @@ public class GameManager : MonoBehaviour
     {
         yield return null;
     }
-    
+    while(curtain == null){
+        yield return null;
+    }
     StartCoroutine(ColorLerpFunction(false, 1));
     
     }
