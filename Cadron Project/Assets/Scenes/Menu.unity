@@ -2078,11 +2078,11 @@ MonoBehaviour:
   m_Content: {fileID: 1355816146}
   m_Horizontal: 1
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 6
+  m_ScrollSensitivity: 10
   m_Viewport: {fileID: 800716955}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 25147196}
@@ -3073,11 +3073,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 0}
+  animalSpots: {fileID: 0}
   dialogText: {fileID: 0}
   curtain: {fileID: 1182465071}
   canvas: {fileID: 1538243438}
   creditsmenu: {fileID: 0}
-  player: {fileID: 0}
+  busy: 0
 --- !u!4 &1226805781
 Transform:
   m_ObjectHideFlags: 0

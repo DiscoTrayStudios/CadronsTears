@@ -10,8 +10,8 @@ public class MapScript : MonoBehaviour
     private Dictionary<string, bool> letters;
     //public GameObject[] letterlocations;
     public void OpenMap(){
-        if(!GameManager.Instance.IsPaused()){
-            GameManager.Instance.PauseGame();
+        if(!GameManager.Instance.isBusy()){
+            GameManager.Instance.playerBusy(true);
             gameObject.SetActive(true);
             MapButton.SetActive(false);
             letters = GameManager.Instance.GetLetters();
@@ -28,7 +28,7 @@ public class MapScript : MonoBehaviour
 
     public void CloseMap(){
         gameObject.SetActive(false);
-        GameManager.Instance.UnpauseGame();
+        GameManager.Instance.playerBusy(false);
         MapButton.SetActive(true);
     }
     // Start is called before the first frame update

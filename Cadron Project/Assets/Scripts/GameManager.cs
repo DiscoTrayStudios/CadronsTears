@@ -11,12 +11,12 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance {get; private set;}
 
     public GameObject dialogBox;
+    public GameObject animalSpots;
     public TextMeshProUGUI dialogText;
     public GameObject curtain;
     public GameObject canvas;
-
     public GameObject creditsmenu;
-    public GameObject player;
+    //public GameObject player;
     private Dictionary<string, bool> letters;
     private bool gamePaused = false;
     private bool raiseLower = false;
@@ -33,6 +33,17 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);  
         } else {
         Destroy(gameObject);
+        }
+    }
+    
+    public List<Transform> getSpots(){
+        Debug.Log("returning spots");
+        StartCoroutine(WaitforSpots());
+        return animalSpots.GetComponent<MakeSpotList>().getMoveSpots();
+    }
+    public IEnumerator WaitforSpots(){
+        while(!animalSpots){
+            yield return null;    
         }
     }
 
@@ -57,19 +68,24 @@ public class GameManager : MonoBehaviour
     }
 
     public void playerBusy(bool b) {
-        if (player != null) {
-            player.GetComponent<PlayerMovement>().SetIdle(b);
-            busy = b;  
-            if (b) { 
-                animator.SetFloat("horizontal", 0);
-                animator.SetFloat("vertical",   0);
+        /*if (player != null) {
+            player.GetComponent<PlayerMovement>().SetIdle(b);*/
+            busy = b; 
+            /*if (b) { 
+                Debug.Log("stoppingggg");
+                animator = player.GetComponent<Animator>();
                 player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll; 
+                animator.SetFloat("horizontal", 0f);
+                animator.SetFloat("vertical",   0f);
+                player.GetComponent<PlayerMovement>().SetIdle(true);
+                //Debug.Log(animator.horizontal);
+                
             }
-            else   { 
-                Animator animator = player.GetComponent<Animator>(); 
-                player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation; 
-            }
-        }
+           // else   { 
+                //Animator animator = player.GetComponent<Animator>(); 
+                //player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation; 
+            //}
+        }*/
     }
 
     public bool isBusy () { return busy; }
@@ -104,6 +120,7 @@ public class GameManager : MonoBehaviour
     }
      IEnumerator LoadYourAsyncScene(string scene)
     {
+        curtain.SetActive(true);
         StartCoroutine(ColorLerpFunction(true, 1));
         while (raiseLower)
         {
@@ -115,7 +132,9 @@ public class GameManager : MonoBehaviour
     {
         yield return null;
     }
-    
+    while(curtain == null){
+        yield return null;
+    }
     StartCoroutine(ColorLerpFunction(false, 1));
     
     }
@@ -126,8 +145,8 @@ public class GameManager : MonoBehaviour
     }
     public void DialogShow(string text) {
         dialogBox.SetActive(true);
-        //playerBusy(true);
-        busy = true;
+        playerBusy(true);
+        //busy = true;
         StopAllCoroutines();
         StartCoroutine(TypeText(text));
     }
@@ -141,11 +160,11 @@ public class GameManager : MonoBehaviour
 
     public void DialogHide(){
         dialogBox.SetActive(false);
-        //playerBusy(false);
+        playerBusy(false);
         busy = false;
         gamePaused = false;
-        Arrow arrow = player.transform.GetChild(0).GetComponent<Arrow>();
-        arrow.itsMouseExit();
+        //Arrow arrow = player.transform.GetChild(0).GetComponent<Arrow>();
+        //arrow.itsMouseExit();
     }
 
     public void ShowButtons(){
