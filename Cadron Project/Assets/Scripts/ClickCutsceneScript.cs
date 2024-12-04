@@ -14,13 +14,13 @@ public class ClickCutsceneScript : MonoBehaviour
     //public Arrow arrow;
 
     public void OnMouseEnter(){
-        if(GameManager.Instance.IsPaused() == false){
+        if(GameManager.Instance.IsPaused() == false && GameManager.Instance.isBusy() == false){
             //arrow.Visible(false);
             Cursor.SetCursor(cursortexture, Vector2.zero, CursorMode.Auto);
         }
     }
     public void OnMouseDown(){
-        if(GameManager.Instance.IsPaused() == false){
+        if(GameManager.Instance.IsPaused() == false && GameManager.Instance.isBusy() == false){
            //arrow.Remove(charname);
            //arrow.Visible(false);
            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
