@@ -48,7 +48,7 @@ public class ClickCutsceneScript : MonoBehaviour
     }
     IEnumerator WaitToStart(){
         while(canStartDialog){
-            if(Input.GetKeyDown(KeyCode.E)){
+            if(Input.GetKeyDown(KeyCode.E) && !GameManager.Instance.isBusy()){
                 Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
                 letterdialog.SetDialog();
                 GameManager.Instance.ToCutscene(dialogLines, charname, portrait);
