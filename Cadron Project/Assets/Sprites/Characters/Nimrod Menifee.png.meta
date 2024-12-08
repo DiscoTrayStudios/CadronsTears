@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,18 +64,20 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -111,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -463,25 +469,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Nimrod Menifee_11: -1027186276
-      Nimrod Menifee_10: 308498279
-      Nimrod Menifee_8: -771940077
-      Nimrod Menifee_2: 2114162721
-      Nimrod Menifee_1: 218160853
-      Nimrod Menifee_3: 1703313645
-      Nimrod Menifee_12: -1487345163
-      Nimrod Menifee_6: -158383220
-      Nimrod Menifee_4: 1606732374
-      Nimrod Menifee_7: 1258782142
-      Nimrod Menifee_5: 1716173514
-      Nimrod Menifee_13: 77935765
-      Nimrod Menifee_9: 2018948787
-      Nimrod Menifee_15: -411150819
-      Nimrod Menifee_14: 453937242
       Nimrod Menifee_0: 2077659411
-  spritePackingTag: 
+      Nimrod Menifee_1: 218160853
+      Nimrod Menifee_10: 308498279
+      Nimrod Menifee_11: -1027186276
+      Nimrod Menifee_12: -1487345163
+      Nimrod Menifee_13: 77935765
+      Nimrod Menifee_14: 453937242
+      Nimrod Menifee_15: -411150819
+      Nimrod Menifee_2: 2114162721
+      Nimrod Menifee_3: 1703313645
+      Nimrod Menifee_4: 1606732374
+      Nimrod Menifee_5: 1716173514
+      Nimrod Menifee_6: -158383220
+      Nimrod Menifee_7: 1258782142
+      Nimrod Menifee_8: -771940077
+      Nimrod Menifee_9: 2018948787
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
