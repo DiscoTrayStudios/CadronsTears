@@ -1023,7 +1023,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -217, y: 78}
-  m_SizeDelta: {x: 350, y: 150}
+  m_SizeDelta: {x: 375, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &692572866
 MonoBehaviour:
@@ -1122,8 +1122,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CREDITS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
-  m_sharedMaterial: {fileID: 2834643015565166256, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 44d6d103e3030214c82d17d37e254dfa, type: 2}
+  m_sharedMaterial: {fileID: -5459973844644023534, guid: 44d6d103e3030214c82d17d37e254dfa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1147,8 +1147,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1445,8 +1445,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: BACK
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
-  m_sharedMaterial: {fileID: 2834643015565166256, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 44d6d103e3030214c82d17d37e254dfa, type: 2}
+  m_sharedMaterial: {fileID: -5459973844644023534, guid: 44d6d103e3030214c82d17d37e254dfa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1556,7 +1556,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 2, y: 529}
-  m_SizeDelta: {x: 700, y: 10900}
+  m_SizeDelta: {x: 750, y: 10900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &797088877
 MonoBehaviour:
@@ -1578,35 +1578,34 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\n\n\nHere at old Cadron, on the Arkansas,\n\nSpawned by the River-Crossing
-    old,\n\nOn Boundary-Line \u2018twixt Osage, Quapaw:\n\nReminder of a breed once
-    bold;\n\nShrouded in Old River history- \n\nLouisiana Purchase ways.\n\nIts annals
-    half-lighted in mystery-\n\nMissouri Territory days.\n\nThe silent tread of aborigene,\n\nThe
-    leather-stockinged pioneer,\n\nThe massacre\u2019s awesome catastrophe,\n\nThe
-    wailing Cherokees passed here;\n\nIt was here Old Arkansas did quicken-\n\nBirthed
-    of Missouri\u2019s motherhood:\n\n\u2018Tis here her first settlement lie stricken\n\nMidst 
-    death\u2019s leveling brotherhood.\n\nHere, \u201CHorse-Thieves-Trammell\u201D
-    initiated\n\n\u201CTrammel\u2019s Trace\u201D through the wilderness\n\nTo Texas
-    Land - he abbreviated\n\nThat long March -  though in sinfulness!\n\nThe famed
-    \u201CWired Road\u201D of the Military,\n\nThat wound afar through Territory,\n\nThrough
-    Cadron Town ran - so small, solitary,\n\nFrench trading-post - now relic hoary.\n\nHere
-    the first District Court in Arkansas;\n\nCounty seat of Conway County;\n\nHere
-    oxen strained to \u201Cgee\u201D and \u201Chaw\u201D;\n\nHere, men found homestead
-    rich in bounty:\n\nThe first county-seat of Pulaski-here:\n\nSteamboat-landing
-    for rivermen:\n\nThe Confederacy saw death draw near!\n\nWe\u2019d bridge the
-    gap \u2018twixt now and then!\n\nHark! The savage war-cry of the Seminoles,\n\nThe
-    screams attending scalping spree.\n\nThe grunt of oxen through life\u2019s shoals\n\nAs
-    men did gain their own rooftree.\n\nA hardy breed that forded its rivers:\n\nThat
-    surged across its mountain cragged;\n\nWho leveled barriers emptied quivers!\n\nThrough
-    tired unto death the knee ne\u2019er sagged.\n\nCherokee. Seminole. Osage. Quapaw.\n\nWho
-    once did lord this fatted land,\n\nHave left a name called \u201CArkansas\u201D!\n\nHaill!
-    Fruitage of the Pioneer\u2019s hand!\n\nThe river-mist rises with dusk-laden
-    moon\n\nSoftly cloaking the cedars there.\n\nMemories! - from out a wilderness
-    hewn\n\nBy spirit\u2019s - brawn - fill all the air.\n\nThe whippoorwill mourns
-    along Cadron Creek,\n\nThe nightingale calls as of yore,\n\n The record fashioned
-    here sons can but seek\n\n    They\u2019ve made The Crossing who forged on before\n\n       
-    They took Cadron with them to yon, far shore!\n\n\n\n\n\n\n\n\n\nCredits: \n\n\n\nDesigners\n\nAmelia
-    Jones\nKaden Franklin\nTaryn England\nZoie Keys\n\n\n\nArtist\n\nAlyssa Chaffin\n\n\n\nSubject-Matter
+  m_text: "\n\n\n\nHere at old Cadron, on the Arkansas,\nSpawned by the River-Crossing
+    old,\nOn Boundary-Line \u2018twixt Osage, Quapaw:\nReminder of a breed once bold;\nShrouded
+    in Old River history- \nLouisiana Purchase ways.\nIts annals half-lighted in
+    mystery-\nMissouri Territory days.\nThe silent tread of aborigene,\nThe leather-stockinged
+    pioneer,\nThe massacre\u2019s awesome catastrophe,\nThe wailing Cherokees passed
+    here;\nIt was here Old Arkansas did quicken-\nBirthed of Missouri\u2019s motherhood:\n\u2018Tis
+    here her first settlement lie stricken\nMidst  death\u2019s leveling brotherhood.\nHere,
+    \u201CHorse-Thieves-Trammell\u201D initiated\n\u201CTrammel\u2019s Trace\u201D
+    through the wilderness\nTo Texas Land - he abbreviated\nThat long March -  though
+    in sinfulness!\nThe famed \u201CWired Road\u201D of the Military,\nThat wound
+    afar through Territory,\nThrough Cadron Town ran - so small, solitary,\nFrench
+    trading-post - now relic hoary.\nHere the first District Court in Arkansas;\nCounty
+    seat of Conway County;\nHere oxen strained to \u201Cgee\u201D and \u201Chaw\u201D;\nHere,
+    men found homestead rich in bounty:\nThe first county-seat of Pulaski-here:\nSteamboat-landing
+    for rivermen:\nThe Confederacy saw death draw near!\nWe\u2019d bridge the gap
+    \u2018twixt now and then!\nHark! The savage war-cry of the Seminoles,\nThe screams
+    attending scalping spree.\nThe grunt of oxen through life\u2019s shoals\nAs men
+    did gain their own rooftree.\nA hardy breed that forded its rivers:\nThat surged
+    across its mountain cragged;\nWho leveled barriers emptied quivers!\nThrough
+    tired unto death the knee ne\u2019er sagged.\nCherokee. Seminole. Osage. Quapaw.\nWho
+    once did lord this fatted land,\nHave left a name called \u201CArkansas\u201D!\nHaill!
+    Fruitage of the Pioneer\u2019s hand!\nThe river-mist rises with dusk-laden moon\nSoftly
+    cloaking the cedars there.\nMemories! - from out a wilderness hewn\nBy spirit\u2019s
+    - brawn - fill all the air.\nThe whippoorwill mourns along Cadron Creek,\nThe
+    nightingale calls as of yore,\nThe record fashioned here sons can but seek\nThey\u2019ve
+    made The Crossing who forged on before\nThey took Cadron with them to yon, far
+    shore!\n\n\n\n\n\n\n\n\n\nCredits: \n\n\n\nDesigners\n\nAmelia Jones\nKaden Franklin\nTaryn
+    England\nZoie Keys\nNoah Morris\n\n\n\nArtist\n\nAlyssa Chaffin\n\n\n\nSubject-Matter
     Expert\n\nLynita Langley-Ware\n\n\n\n\n\n\n\nAesthetics:\r\n\r\nAnimals - https://kale-game.itch.io/2d-pixel-art\r\n\r\nAnimated
     Animals - https://lyaseek.itch.io/miniffanimals\r\n\r\nBase Tile set - https://mythril-age.itch.io/mythril-age-tilesets\r\n\r\nCharacters
     - https://shatteredreality.itch.io/pcc\r\n\r\nFire - https://brullov.itch.io/fire-animation\r\n\r\nFood
@@ -2061,7 +2060,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -47}
-  m_SizeDelta: {x: 700, y: 700}
+  m_SizeDelta: {x: 800, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &950661198
 MonoBehaviour:
@@ -2190,8 +2189,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: MENU
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
-  m_sharedMaterial: {fileID: 2834643015565166256, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 44d6d103e3030214c82d17d37e254dfa, type: 2}
+  m_sharedMaterial: {fileID: -5459973844644023534, guid: 44d6d103e3030214c82d17d37e254dfa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2331,8 +2330,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278782218
-  m_fontColor: {r: 0.03773582, g: 0.037064508, b: 0.035125166, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2579,7 +2578,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 220, y: -145}
-  m_SizeDelta: {x: 150, y: 100}
+  m_SizeDelta: {x: 125, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1010716360
 MonoBehaviour:
@@ -2825,8 +2824,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278782218
-  m_fontColor: {r: 0.03773582, g: 0.03654916, b: 0.03654916, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3160,8 +3159,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278782218
-  m_fontColor: {r: 0.03773582, g: 0.03654916, b: 0.03654916, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4405,8 +4404,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CONTROLS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
-  m_sharedMaterial: {fileID: 2834643015565166256, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 44d6d103e3030214c82d17d37e254dfa, type: 2}
+  m_sharedMaterial: {fileID: -5459973844644023534, guid: 44d6d103e3030214c82d17d37e254dfa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4430,8 +4429,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4575,8 +4574,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PLAY
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
-  m_sharedMaterial: {fileID: 2834643015565166256, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 44d6d103e3030214c82d17d37e254dfa, type: 2}
+  m_sharedMaterial: {fileID: -5459973844644023534, guid: 44d6d103e3030214c82d17d37e254dfa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4600,8 +4599,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4861,8 +4860,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278650631
-  m_fontColor: {r: 0.028301895, g: 0.027867068, b: 0.0266109, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4988,8 +4987,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: cadron's tears
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
-  m_sharedMaterial: {fileID: 2834643015565166256, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 44d6d103e3030214c82d17d37e254dfa, type: 2}
+  m_sharedMaterial: {fileID: -5459973844644023534, guid: 44d6d103e3030214c82d17d37e254dfa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5013,8 +5012,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 63
-  m_fontSizeBase: 63
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
