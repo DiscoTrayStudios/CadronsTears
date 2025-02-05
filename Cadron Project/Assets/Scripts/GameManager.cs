@@ -224,6 +224,7 @@ public class GameManager : MonoBehaviour
             GameObject bpb = canvas.transform.Find("BackpackButton").gameObject;
             bpb.GetComponent<BackpackLetterPopup>().ShowNewLetter();
             newletter = false;
+            canvas.transform.Find("MapMenu").GetComponent<MapScript>().OpenMap();
         }
     //        Time.timeScale = 1f;
     }
