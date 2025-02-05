@@ -20,7 +20,7 @@ public class MapLetterVisibility : MonoBehaviour
     void Update()
     {
         if(GameManager.Instance.HaveLetter(lettername) && !GameManager.Instance.IsLetterDelivered(lettername)){
-            spriteRenderer.enabled = true;
+            //spriteRenderer.enabled = true;
         }
         else{
             spriteRenderer.enabled = false;
