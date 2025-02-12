@@ -69,21 +69,27 @@ public class NewAnimalMove : MonoBehaviour
         while(moving){
             hit = Physics2D.Raycast(transform.position, directionMoving, 1);
             if(hit){
-                //Debug.DrawRay(transform.position, directionMoving, Color.white);
-                moving = false;
-                
-                int wait = Random.Range(0, 15);
-                Debug.Log(wait);
-                if(wait > 5){
-                    //if wait is longer than five seconds, the animal will stop for a third of the time, then take a nap.
-                    yield return new WaitForSeconds(wait/3);
-                    anim.SetBool("nap", true);
-                    yield return new WaitForSeconds((wait/3) * 2);
-                    anim.SetBool("nap", false);
-                    yield return new WaitForSeconds(1);
+                if (hit.collider.gameObject.CompareTag("Player")){
+                    Debug.Log("player");
+                    moving = false;
+                    GetRandomDirection();
                 }
                 else{
-                    yield return new WaitForSeconds(wait);
+                //Debug.DrawRay(transform.position, directionMoving, Color.white);
+                    moving = false;
+                
+                    int wait = Random.Range(0, 15);
+                    if(wait > 5){
+                    //if wait is longer than five seconds, the animal will stop for a third of the time, then take a nap.
+                        yield return new WaitForSeconds(wait/3);
+                        anim.SetBool("nap", true);
+                        yield return new WaitForSeconds((wait/3) * 2);
+                        anim.SetBool("nap", false);
+                        yield return new WaitForSeconds(1);
+                    }
+                    else{
+                        yield return new WaitForSeconds(wait);
+                    }
                 }
                 
             }
