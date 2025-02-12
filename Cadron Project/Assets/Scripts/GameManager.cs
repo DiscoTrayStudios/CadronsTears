@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance {get; private set;}
 
     public GameObject dialogBox;
-    public GameObject animalSpots;
     public TextMeshProUGUI dialogText;
     public GameObject curtain;
     public GameObject canvas;
@@ -231,6 +230,12 @@ public class GameManager : MonoBehaviour
     }
     public Dictionary<string, bool> GetLetters(){
         return letters;
+    }
+
+    public void EndPopup(){
+        GameObject timetext = canvas.transform.Find("Time").gameObject;
+        timetext.GetComponent<TextMeshProUGUI>().text = "It has been a long day. Time to rest.";
+        timetext.GetComponent<TimeFade>().FadeText();
     }
 
     public int GetTentscene(){

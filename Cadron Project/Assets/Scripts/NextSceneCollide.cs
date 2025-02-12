@@ -8,6 +8,7 @@ public class NextSceneCollide : MonoBehaviour
     public string nextscene;
     public int whichscene;
     public string requiredletter;
+    bool faded = false;
 
     public GameObject icon;
     void Start()
@@ -33,6 +34,11 @@ public class NextSceneCollide : MonoBehaviour
     {
         if(GameManager.Instance.IsLetterDelivered(requiredletter)){
             icon.GetComponent<SpriteRenderer>().enabled = true;
+            if(!faded && !GameManager.Instance.isBusy()){
+                GameManager.Instance.EndPopup();
+                faded = true;
+            }
+
         }
         else{
             icon.GetComponent<SpriteRenderer>().enabled = false;
