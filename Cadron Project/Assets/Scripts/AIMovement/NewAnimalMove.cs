@@ -70,7 +70,6 @@ public class NewAnimalMove : MonoBehaviour
             hit = Physics2D.Raycast(transform.position, directionMoving, 1);
             if(hit){
                 if (hit.collider.gameObject.CompareTag("Player")){
-                    Debug.Log("player");
                     moving = false;
                     GetRandomDirection();
                 }

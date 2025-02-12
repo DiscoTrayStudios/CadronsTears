@@ -43,7 +43,6 @@ public class ClickCutsceneScript : MonoBehaviour
         if (collision.rigidbody.gameObject.CompareTag("Player")) {
             canStartDialog = true;
             StartCoroutine(WaitToStart());
-            Debug.Log("ent");
         }
     }
     IEnumerator WaitToStart(){

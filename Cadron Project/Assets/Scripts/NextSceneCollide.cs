@@ -24,7 +24,7 @@ public class NextSceneCollide : MonoBehaviour
             {
             
             //print to the console
-            Debug.Log("Player has exited the trigger");
+            
             GameManager.Instance.StartTentscene(whichscene, nextscene);
             }
         }
