@@ -36,16 +36,7 @@ public class GameManager : MonoBehaviour
         }
     }
     
-    public List<Transform> getSpots(){
-        Debug.Log("returning spots");
-        StartCoroutine(WaitforSpots());
-        return animalSpots.GetComponent<MakeSpotList>().getMoveSpots();
-    }
-    public IEnumerator WaitforSpots(){
-        while(!animalSpots){
-            yield return null;    
-        }
-    }
+   
 
     public bool IsLetterDelivered(string key){
         if (letters.ContainsKey(key)){
