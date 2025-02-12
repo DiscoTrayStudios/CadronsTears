@@ -37,20 +37,19 @@ public class NewAnimalMove : MonoBehaviour
         //if there is an obstacle in the direction, gets a new one
         while(hit){
             //Debug.DrawRay(transform.position, direction, Color.white);
-            Debug.Log("testhit");
             direction = Random.insideUnitCircle;
             hit = Physics2D.Raycast(transform.position, direction, 1);
             yield return null;
         }
         
             directionMoving = direction;
-            Debug.Log("direct");
+            
             StartCoroutine(MoveInDirection());
             //moveTo = point;
         
     }
     private void StartMoving(){
-        Debug.Log("starting");
+    
         StartCoroutine(GetRandomDirection());
         //Debug.DrawRay(transform.position, directionMoving, Color.white);
         //StartCoroutine(MoveInDirection());
@@ -71,7 +70,6 @@ public class NewAnimalMove : MonoBehaviour
             hit = Physics2D.Raycast(transform.position, directionMoving, 1);
             if(hit){
                 //Debug.DrawRay(transform.position, directionMoving, Color.white);
-                Debug.Log("hit");
                 moving = false;
                 
                 int wait = Random.Range(0, 15);
