@@ -27,6 +27,9 @@ public class LetterDialog : MonoBehaviour
                     dialogScript.dialogLines = afterletterdialog;
                 }
             }
+            else if (sendbeforereceive && GM.HaveLetter(sendsletterto)){
+                dialogScript.dialogLines = afterletterdialog;
+            }
         }
         
         else {
