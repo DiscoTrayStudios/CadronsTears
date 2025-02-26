@@ -2538,7 +2538,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 469260783}
-  animalSpots: {fileID: 0}
   dialogText: {fileID: 1317079938}
   curtain: {fileID: 193484953}
   canvas: {fileID: 608742035}
@@ -24986,7 +24985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc96915f69ce44408e252f8b8621307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sendsletterto: Alexander McFarland
+  sendsletterto: Heckaton
   deliverLetterDialog: []
   afterletterdialog:
   - Take the letter to Mr. McFarland.
@@ -25009,13 +25008,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charname: Arkansas Traveller
   dialogLines:
-  - Well we have finally made it.
+  - We have finally made it.
   - This is the area the Osage tribesmen call the Quadrant creek.
+  - You will be delivering letters to the people of this area.
   - You will find nearby the borders of many tribes, peaceful and not.
-  - So be careful.
-  - One last thing...
-  - It is very important.
-  - Take this letter to Alexander McFarland, it is his pre-emption claim.
+  - Talk to the people of this area.
+  - Once you have done that, take this letter to Alexander McFarland, it is his pre-emption
+    claim.
   - With this he can buy public land at a federally set minimum price.
   - That will be all...
   - And I will be on my way.
@@ -25218,6 +25217,7 @@ GameObject:
   - component: {fileID: 1023444795}
   - component: {fileID: 1023444797}
   - component: {fileID: 1023444796}
+  - component: {fileID: 1023444798}
   m_Layer: 5
   m_Name: Heckaton
   m_TagString: Untagged
@@ -25282,6 +25282,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023444794}
   m_CullTransparentMesh: 1
+--- !u!114 &1023444798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023444794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843d5b43d10924646b81c9466afdfdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bw: {fileID: -1676763459, guid: c55149c6dc66e9c40ada3a77b60dc4bb, type: 3}
+  glowing: {fileID: 970055349, guid: e911b491f151e3a48a312844d5133b0e, type: 3}
+  isFirst: 0
+  sendsto: 
 --- !u!1 &1040720546
 GameObject:
   m_ObjectHideFlags: 0
@@ -26057,6 +26073,8 @@ GameObject:
   - component: {fileID: 1269726673}
   - component: {fileID: 1269726675}
   - component: {fileID: 1269726676}
+  - component: {fileID: 1269726677}
+  - component: {fileID: 1269726678}
   m_Layer: 0
   m_Name: Heckaton
   m_TagString: Untagged
@@ -26167,12 +26185,10 @@ MonoBehaviour:
   charname: Heckaton
   dialogLines:
   - Hello. I am Heckaton.
-  - Chief of the Quapaw.
-  - We are just travelling through this area.
-  - We don't live here, but we will visit seasonally.
-  letterdialog: {fileID: 0}
-  portrait: {fileID: 0}
-  cursortexture: {fileID: 0}
+  - Have a good day.
+  letterdialog: {fileID: 1269726678}
+  portrait: {fileID: 1695103532, guid: 49ac2262368fbd043ab9bda561707258, type: 3}
+  cursortexture: {fileID: 2800000, guid: 1cd0d7a2d0c88c544908c14246fd0762, type: 3}
 --- !u!61 &1269726676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26218,6 +26234,57 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.31}
   m_EdgeRadius: 0
+--- !u!50 &1269726677
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269726671}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &1269726678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269726671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc96915f69ce44408e252f8b8621307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sendsletterto: Alexander McFarland
+  deliverLetterDialog:
+  - Hello. I am Heckaton.
+  - Chief of the Quapaw.
+  - We are just travelling through this area.
+  - We don't live here, but we will visit seasonally.
+  afterletterdialog:
+  - Have a good day.
+  sendsLetter: 1
+  receivesLetter: 1
+  sendbeforereceive: 0
+  dialogScript: {fileID: 1269726675}
 --- !u!1 &1317079936
 GameObject:
   m_ObjectHideFlags: 0
@@ -26614,7 +26681,7 @@ MonoBehaviour:
   bw: {fileID: -1944253952, guid: c55149c6dc66e9c40ada3a77b60dc4bb, type: 3}
   glowing: {fileID: -1977638215, guid: e911b491f151e3a48a312844d5133b0e, type: 3}
   isFirst: 1
-  sendsto: Alexander McFarland
+  sendsto: Heckaton
 --- !u!114 &1392826169
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -37,20 +37,19 @@ public class NewAnimalMove : MonoBehaviour
         //if there is an obstacle in the direction, gets a new one
         while(hit){
             //Debug.DrawRay(transform.position, direction, Color.white);
-            Debug.Log("testhit");
             direction = Random.insideUnitCircle;
             hit = Physics2D.Raycast(transform.position, direction, 1);
             yield return null;
         }
         
             directionMoving = direction;
-            Debug.Log("direct");
+            
             StartCoroutine(MoveInDirection());
             //moveTo = point;
         
     }
     private void StartMoving(){
-        Debug.Log("starting");
+    
         StartCoroutine(GetRandomDirection());
         //Debug.DrawRay(transform.position, directionMoving, Color.white);
         //StartCoroutine(MoveInDirection());
@@ -70,22 +69,26 @@ public class NewAnimalMove : MonoBehaviour
         while(moving){
             hit = Physics2D.Raycast(transform.position, directionMoving, 1);
             if(hit){
-                //Debug.DrawRay(transform.position, directionMoving, Color.white);
-                Debug.Log("hit");
-                moving = false;
-                
-                int wait = Random.Range(0, 15);
-                Debug.Log(wait);
-                if(wait > 5){
-                    //if wait is longer than five seconds, the animal will stop for a third of the time, then take a nap.
-                    yield return new WaitForSeconds(wait/3);
-                    anim.SetBool("nap", true);
-                    yield return new WaitForSeconds((wait/3) * 2);
-                    anim.SetBool("nap", false);
-                    yield return new WaitForSeconds(1);
+                if (hit.collider.gameObject.CompareTag("Player")){
+                    moving = false;
+                    GetRandomDirection();
                 }
                 else{
-                    yield return new WaitForSeconds(wait);
+                //Debug.DrawRay(transform.position, directionMoving, Color.white);
+                    moving = false;
+                
+                    int wait = Random.Range(0, 15);
+                    if(wait > 5){
+                    //if wait is longer than five seconds, the animal will stop for a third of the time, then take a nap.
+                        yield return new WaitForSeconds(wait/3);
+                        anim.SetBool("nap", true);
+                        yield return new WaitForSeconds((wait/3) * 2);
+                        anim.SetBool("nap", false);
+                        yield return new WaitForSeconds(1);
+                    }
+                    else{
+                        yield return new WaitForSeconds(wait);
+                    }
                 }
                 
             }
