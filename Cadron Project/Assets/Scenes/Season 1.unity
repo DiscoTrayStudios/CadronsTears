@@ -25008,8 +25008,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charname: Arkansas Traveller
   dialogLines:
-  - Well we have finally made it.
+  - We have finally made it.
   - This is the area the Osage tribesmen call the Quadrant creek.
+  - You will be delivering letters to the people of this area.
   - You will find nearby the borders of many tribes, peaceful and not.
   - Talk to the people of this area.
   - Once you have done that, take this letter to Alexander McFarland, it is his pre-emption
