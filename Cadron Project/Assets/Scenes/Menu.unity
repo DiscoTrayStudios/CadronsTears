@@ -1619,8 +1619,8 @@ MonoBehaviour:
     Historical Quarterly Autumn, 1960 Vol. Xix No. 3 \"Some Old French Place Names
     in the State of Arkansas\" - Lonnie J. White\r\n\r\nFaulkner Facts and Fiddlings
     - Winter 1972 Vol XIV No. 4. \"Report on the Cadron Settlement Park\" - Waddy
-    W. Moore\r\n\r\nPulasi County Historical Review - December, 1956 Vol. 4 No. 4 
-    \"SQUATTERS RIGHTS PART III The Cadron Settlement Prior to 1814\" - Margaret
+    W. Moore\r\n\r\nPulaski County Historical Review - December, 1956 Vol. 4 No.
+    4  \"SQUATTERS RIGHTS PART III The Cadron Settlement Prior to 1814\" - Margaret
     Smith Ross\r\n\r\nFaulkner Facts and Fiddlings - September 1959 Vol 1 No. 1.
     \"Cadron\" - Guy W. Murphy\r\n\r\n\"Nuttall's Travels into the Arkansas Territory,
     1819.\" - Thomas Nuttall / https://www.loc.gov/item/05013013/\r\n\r\n\"Story
@@ -3072,7 +3072,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 0}
-  animalSpots: {fileID: 0}
   dialogText: {fileID: 0}
   curtain: {fileID: 1182465071}
   canvas: {fileID: 1538243438}
